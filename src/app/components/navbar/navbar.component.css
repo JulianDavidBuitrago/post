@@ -1,0 +1,11 @@
+#icon {
+    width:4%;
+  }
+  
+  @media (max-width: 600px) {
+  
+    #icon{
+      width: 10%;
+    }
+  }
+  

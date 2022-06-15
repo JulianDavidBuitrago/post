@@ -1,0 +1,41 @@
+    <nav class="navbar navbar-expand-lg navbar-dark " >
+        <div class="container-fluid">
+          <img class="img-responsive" [src]="globales.imagenDefault" id="icon" alt="User Icon"/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+      
+            <ul class="navbar-nav mr-auto">
+      
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Jaramillo Villegas & CIA
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" routerLink="/mi-perfil-jac">Info Usuario</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/actualizar-datos-usuario-jac" id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Actualizar Datos
+                    </a>
+                  </li>
+      
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="nav-item dropdown pointer">
+                    <a class="nav-link" >Cerrar sesión</a>
+                  </li>
+      
+                </ul>
+              </li>
+      
+              <li class="nav-item">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      

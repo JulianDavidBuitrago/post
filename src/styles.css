@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+    --color-primario: #004560;
+    --color-secundario: #C6FF01;
+    --color-terciario: #0BBCC4;
+  }
+  
+  nav, .dropdown-menu {
+    background-color: var(--color-primario);
+  }
+  
+  .navbar a{
+    color: white !important;
+  
+  }
+  .pointer{
+    cursor: pointer;
+  }
+  
+  .m-0{
+    margin: 0 auto !important;
+  }
+  
+  .texto-justificar{
+    text-align: justify;
+  }
+  
+  .modal-body {
+    padding: 0px;
+  
+  }
+  
+  @media (max-width: 600px) {
+    .btn-responsive {
+      width: 100%;
+    }
+  }
+  
+  .altDiv{
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+  .prueba{
+    max-height: 300px;
+      /* width: 200px;
+      border: 1px solid #ddd;
+      background: #f1f1f1;*/
+      overflow-y: scroll;
+  }
