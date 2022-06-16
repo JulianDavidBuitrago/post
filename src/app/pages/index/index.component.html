@@ -1,1 +1,59 @@
-<p>index works!</p>
+<div class="container py-3">
+  <div class="card text-dark bg-light">
+    <div class="card-body">
+        <form [formGroup]="formulario">
+            <div class="row">
+              <h3 class="text-center my-2">Crear Post</h3>
+      
+              <div class="col-lg-3 mb-3">
+                <label for="txtTitulo" class="form-label">Título: </label>
+                <input formControlName="txtTitulo" type="text" class="form-control" placeholder="Título"/>
+              </div>
+      
+              <div class="col-lg-3 mb-3">
+                  <label for="txtFechaCreacion" class="form-label">Fecha de creación: </label>
+                  <input formControlName="txtFechaCreacion" type="date" class="form-control" placeholder="Fecha de creación"/>
+                </div>
+      
+                <div class="col-lg-3 mb-3">
+                  <label for="txtTexto" class="form-label">Texto: </label>
+                  <input formControlName="txtTexto" type="text" class="form-control" placeholder="Texto"/>
+                </div>
+      
+              <div class="col-lg-3">
+                <button (click)="enviarPost()" class="btn btn-success" style="margin-top: 31px">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </form>
+
+    </div>
+    
+  </div>
+
+  <table class="table align-middle mt-5">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Fecha de creación</th>
+        <th scope="col">Título</th>
+        <th scope="col">Texto</th>
+        <th scope="col">Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of arrayPosts">
+        <td>{{ post.id }}</td>
+        <td>{{ post.fechaCreacion | date: 'yyyy-MM-dd'  }}</td>
+        <td>{{ post.titulo }}</td>
+        <td>{{ post.texto }}</td>
+
+        <td>
+          <button class="btn btn-danger btn-sm"
+                    (click)="eliminarPost(post.id)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,5 +1,6 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { ApiService } from 'src/services/api/api.service';
 
@@ -12,10 +13,13 @@ import { IndexComponent } from './pages/index/index.component';
     AppComponent,
     NavbarComponent,
     IndexComponent
+    
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     ApiService,
